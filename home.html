@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ourSTORE | HOME</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .btn
+      {
+        background-color: white;
+        border: solid black 2px;
+        border-radius: 8px;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-family: Comic Sans MS, Comic Sans, cursive ;
+      }
+      .btn:hover 
+      {
+        background-color: black;
+        color:white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+      }}
+      .btn.active
+      {
+        background-color: black;
+        color: white
+      }
+      .k 
+      {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 86%;
+      }
+
+        .k:hover 
+        {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .w 
+        {
+            padding: 7px 16px;
+            font-family: Comic Sans MS, Comic Sans, cursive ;
+        }
+      </style>
+  </head>
+
+  <body>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="col-lg-12 col-md-6 col-sm-4 col-xs-12 mt-lg-4">
+            <center style="font-size: 120px; font-family: Comic Sans MS, Comic Sans, cursive;">our<strong>STORE</strong></center>
+          </div>
+
+          <div class="col-lg-12 col-md-6 col-sm-4 col-xs-12 mt-lg-4">
+            <center>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="ftn('all')">
+                      all
+                    </button>
+                    <button1 class="btn" onclick="ftn('cake')">cake</button1>
+                    <button2 class="btn" onclick="ftn('cookie')">cookie</button2>
+                    <button3 class="btn" onclick="ftn('sweets')">sweets</button3>
+                    <button4 class="btn" onclick="ftn('doughnuts')">
+                      doughnuts
+                    </button4>
+                  </div>
+            
+  
+            </center>
+          </div>
+          <div class="col-lg-12 col-md-6 col-sm-4 col-xs-12 mt-lg-4">
+            <center>
+              <i class="fa fa-search" style="font-size: 36px; ">
+                <input
+                  type="text"
+                  placeholder="item.."
+                  id="myInput"
+                  onkeyup="myFunction()"
+                  style="width: 900px; height: 50px;"
+                />
+              </i>
+            </center>
+          </div>
+          <div class="col-lg-12 col-md-6 col-sm-4 col-xs-12 mt-lg-4">
+          
+            <div class="row" id="myUL">
+              <h5 class="column cake" id="cake" >
+                <i ><div class="k" ><img  src="img/cake1.jpg" style="width: 300px; height: 300px;"/>
+                </br><div class="w">RAINBOW <span style="word-spacing: 80px;">CAKE $30</span></div></div></i>
+              </h5>
+
+              <h5 class="column cookie" id="cookie">
+                <i id="cake"><div class="k">
+                  <img src="img/cookie1.jpg" style="width: 300px; height: 300px;"/>
+                </br><div class="w"><span style="word-spacing: 155px;">COOKIE $5</span></div></div></i>
+              </h5>
+
+              <h5 class="column cake"  id="cake">
+                   <i><div class="k"> <img src="img/cake2.jpg" style="width: 300px; height: 300px;"/>
+                </br><div class="w">BLACK FOREST <span style="word-spacing: 30px;">CAKE $20</span></div></div></i>
+              </h5>
+                <h5 class="column sweets" id="sweets">
+                  <i ><div class="k">
+                    <img src="img/sweet1.jpg" style="width: 300px; height: 300px;"/>
+                </br><div class="w">BENGALI <span style="word-spacing: 65px;">SWEET $10</span></div></div></i>
+              </h5>
+
+              <h5 class="column doughnut" id="doughnuts">
+                <i ><div class="k">
+                  <img src="img/doughnut1.jpg" style="width: 300px; height: 300px;"/>
+                </br><div class="w">BUTTERMILK <span style="word-spacing: 1px;">DOUGHNUT $15</span></div></div></i>
+              </h5>
+              <h5 class="column cookie" id="cookie">
+                <i ><div class="k">
+                  <img src="img/cookie2.jpeg" style="width: 300px; height: 300px;"/>
+                </br><div class="w">CHOCOLATE <span style="word-spacing: 40px;">COOKIE $15</span></div></div></i>
+              
+            </h5>
+            <h5 class="column cake" id="cake" >
+              <i ><div class="k">
+                <img src="img/cake3.jpg" style="width: 300px; height: 300px;"/>
+            </br><div class="w">STRAWBERRY <span style="word-spacing: 40px;">CAKE $55</span></div></div></i>
+            
+          </h5>
+          <h5 class="column sweets" id="sweets" >
+            <i > <div class="k">
+              <img src="img/sweet2.jpg" style="width: 300px; height: 300px;"/>
+            </br><div class="w">GULAB <span style="word-spacing: 85px;">JAMUN $15</span></div></div></i>
+          
+        </h5>
+        <h5 class="column sweets" id="sweets">
+          <i ><div class="k">
+            <img src="img/sweet3.jpg" style="width: 300px; height: 300px;"/>
+        </br><div class="w"><span style="word-spacing: 165px;">LADDU $12</span></div></div></i>
+        
+      </h5>
+      <h5 class="column doughnuts" id="doughnuts">
+        <i ><div class="k">
+          <img src="img/doughnut2.jpg" style="width: 300px; height: 300px;"/>
+        </br><div class="w">EASTER EGG <span style="word-spacing: 3px;">DOUGHNUT $20</span></div></div></i>
+     
+    </h5>
+    <h5 class="column doughnuts" id="doughnuts"  >
+      <i ><div class="k" >
+        <img src="img/doughnut3.jpg" style="width: 300px; height: 300px;"/>
+    </br><div class="w">OVEN BAKED <span style="word-spacing: 3px;">DOUGHNUT $10</span></div></div></i>
+    </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        //for search bar ->
+        function myFunction() {
+          var input, filter, q, div, a, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          div = document.getElementById("myUL");
+          q = div.getElementsByTagName("h5");
+          for (i = 0; i < q.length; i++) {
+            a = q[i].getElementsByTagName("i")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              q[i].style.display = "";
+            } else {
+              q[i].style.display = "none";
+            }
+          }
+        }
+        //for buttons->
+               
+    $(document).ready(function()
+    {
+    $("button").click(function(){
+    $("h5").show();
+    });
+
+    $("button1").click(function(){
+        $("h5").hide();
+    $("h5#cake").show(0);
+    });
+
+    $("button2").click(function(){   
+        $("h5").hide(); 
+    $("h5#cookie").show(0);
+    
+    });
+    $("button3").click(function(){   
+        $("h5").hide(); 
+    $("h5#sweets").show(0);
+    });
+    $("button4").click(function(){   
+        $("h5").hide(); 
+    $("h5#doughnuts").show(0);
+    });
+    });     
+      </script>
+  </body>
+</html>
